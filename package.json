@@ -13,6 +13,8 @@
     "@babel/core": "^7.12.10",
     "@babel/preset-env": "^7.12.11",
     "@babel/preset-react": "^7.12.10",
+    "@stryker-mutator/core": "^4.4.1",
+    "@stryker-mutator/jest-runner": "^4.4.1",
     "@testing-library/react": "^11.2.2",
     "jsdoc": "^3.6.6",
     "zip-a-folder": "0.0.12"
@@ -25,7 +27,7 @@
     "build-chrome": "node misc/adjust_manifest.js chrome && npm run build && node misc/zip.js chrome",
     "build-all": "npm run build-firefox && npm run build-chrome",
     "eject": "react-scripts eject",
-    "test": "jest --coverage --config ./config/jest.config.js",
+    "test": "jest --coverage --config ./jest.config.js",
     "test:watch": "npm run test --watchAll",
     "test:tab": "npm run test -- ./tests/Tab_spec/",
     "test:group": "npm run test -- ./tests/Group_spec/",
